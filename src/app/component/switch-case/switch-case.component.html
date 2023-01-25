@@ -1,0 +1,14 @@
+<div [ngSwitch]="color">
+<div style="width: 33.33%; float: left;">
+    <button style="width: 1in; background-color: red;" (click)="setColor('red')">Red</button>
+    <p *ngSwitchCase="'red'" style="height: 1in; width: 1in; background-color: red;"></p>
+</div>
+<div style="width: 33.33%; float: left;">
+    <button style="width: 1in; background-color: green;" (click)="setColor('green')">Green</button>
+    <p *ngSwitchCase="'green'" style="height: 1in; width: 1in; background-color: green;"></p>
+</div>
+<div style="width: 33.33%; float: left;">
+    <button style="width: 1in; background-color: blue;" (click)="setColor('blue')">Blue</button>
+    <p *ngSwitchCase="'blue'" style="height: 1in; width: 1in; background-color: blue;"></p>
+</div>
+</div>
